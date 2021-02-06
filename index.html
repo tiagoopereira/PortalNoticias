@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+        <title>Portal</title>
+    </head>
+    <body>
+        <!-- MENU DO TOPO DO SITE -->
+        <div class="topo">
+            <div class="topoint">
+                <div class="topo-left">
+                    <ul>
+                        <li><a href="./" class="ativo">Home</a></li>
+                        <li><a href="./">Quem Somos</a></li>
+                        <li><a href="./">Anuncie Aqui</a></li>
+                        <li><a href="./">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="topo-right">
+                    <input type="image" src="assets/images/lupa.png" border="0" width="14" height="14"/>
+                    <input type="text" name="busca" class="topo-busca" placeholder="Busca..."/>
+                    <a href="http://www.youtube.com.br" target="_blank"><img src="assets/images/youtube.png" border="0" width="26" height="26"/></a>
+                    <a href="http://www.twitter.com.br" target="_blank"><img src="assets/images/twitter.png" border="0" width="26" height="26"/></a>
+                    <a href="http://www.facebook.com.br" target="_blank"><img src="assets/images/facebook.png" border="0" width="26" height="26"/></a>
+                    <a href="http://www.google.com.br" target="_blank"><img src="assets/images/googleplus.png" border="0" width="26" height="26"/></a>
+                    <a href="" target="_blank"><img src="assets/images/rss.png" border="0" width="26" height="26"/></a>
+                </div>
+            </div>
+        </div>
+        <!-- LOGO E PUBLICIDADE DO TOPO DO SITE -->
+        <div class="topo2">
+            <div class="topoint2">
+                <div class="logo">
+                    <a href="./"><img src="assets/images/logo.png" border="0" width="250" height="90"/></a>
+                </div>
+                <div class="banner">
+                    <img src="assets/images/banner.jpg" width="650" height="100"/>
+                </div>
+            </div>
+        </div>
+        <!-- MENU DE NAVEGAÇÃO DO SITE -->
+        <div class="menu">
+            <div class="menuint">
+                <img class="menu-mobile" onclick="toggleMenu()" src="assets/images/menu.png" border="0" width="30" height="30"/>
+                <ul id="menu">
+                    <a href="./"><li class="ativo">Home</li></a>
+                    <a href="./"><li>Economia</li></a>
+                    <li>
+                        Entretenimento
+                        <img src="assets/images/seta.png" border="0" width="12"/>
+                    
+                        <div class="submenu">
+                            <a href="./">
+                                <div class="submenu-item">
+                                    Filmes
+                                </div>
+                            </a>
+                            <a href="./">
+                                <div class="submenu-item">
+                                    Séries
+                                </div>
+                            </a>
+                            <a href="./">
+                                <div class="submenu-item">
+                                    Jogos
+                                </div>
+                            </a>
+                            <a href="./">
+                                <div class="submenu-item">
+                                    Novelas
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        Esportes
+                        <img src="assets/images/seta.png" border="0" width="12"/>
+                        
+                        <div class="submenu">
+                            <a href="./">
+                                <div class="submenu-item">
+                                    Futebol
+                                </div>
+                            </a>
+                            <a href="./">
+                                <div class="submenu-item">
+                                    Basquete
+                                </div>
+                            </a>
+                            <a href="./">
+                                <div class="submenu-item">
+                                    Vôlei
+                                </div>
+                            </a>
+                            <a href="./">
+                                <div class="submenu-item">
+                                    Tênis
+                                </div>
+                            </a>
+                            <a href="./">
+                                <div class="submenu-item">
+                                    Judô
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <a href="./"><li>Geral</li></a>
+                    <li>
+                        Notícias
+                        <img src="assets/images/seta.png" border="0" width="12"/>
+                        
+                        <div class="submenu">
+                            <a href="./">
+                                <div class="submenu-item">
+                                    Diária
+                                </div>
+                            </a>
+                            <a href="./">
+                                <div class="submenu-item">
+                                    Semanal
+                                </div>
+                            </a>
+                            <a href="./">
+                                <div class="submenu-item">
+                                    Mensal
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <a href="./"><li>Polícia</li></a>
+                    <a href="./"><li>Vídeos</li></a>
+                </ul>
+            </div>
+        </div>
+        <!-- ÁREA DE ÚLTIMAS NOTÍCIAS AO TOPO -->
+        <div class="noticias">
+            <div class="noticiasint">
+                <div class="noticias-area">
+                    <div class="ultimas-noticias">ÚLTIMAS NOTÍCIAS</div>
+                    <div class="noticia">Criador da internet teme a perda de todas as nossas memórias digitais no futuro</div>
+                </div>
+            </div>
+        </div>
+        <!-- CORPO DO SITE -->
+        <div class="container">
+            <div class="containerint">
+                <!-- PARTE ESQUERDA DO CORPO DO SITE -->
+                <div class="leftside">
+                    <!-- SLIDES -->
+                    <div class="slideshow" id="slideshow">
+                        <!-- CONTROLE DOS SLIDES -->
+                        <div class="passador-slide">
+                            <div class="passador" onclick="mudarSlide(0)"></div>
+                            <div class="passador" onclick="mudarSlide(1)"></div>
+                            <div class="passador" onclick="mudarSlide(2)"></div>
+                            <div class="passador" onclick="mudarSlide(3)"></div>
+                        </div>
+                        <!-- CARROSSEL DE IMAGENS -->
+                        <div class="slideshowarea">
+                            <div class="slide" style="background-image:url('https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/18/2014/07/24025147/6BaVde_t20_VKbpQ7-e1527130375674.jpg');">
+                                <div class="slideinfo">
+                                    <div class="slidetitulo">
+                                        Teste
+                                    </div>
+                                    <div class="slidesubtitulo">
+                                        TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide" style="background-image:url('https://resultadosdigitais.com.br/blog/files/2018/01/url-amigavel.jpg');">
+                                <div class="slideinfo">
+                                    <div class="slidetitulo">
+                                        Teste2
+                                    </div>
+                                    <div class="slidesubtitulo">
+                                        TESTE2 TESTE2 TESTE2 TESTE2 TESTE2 TESTE2 TESTE2 TESTE2
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide" style="background-image:url('https://abrilvejasp.files.wordpress.com/2019/03/imagem-e-palavra-c2a9casaazulfilms-ecrannoir-4.jpg?quality=70&strip=info&w=928');">
+                                <div class="slideinfo">
+                                    <div class="slidetitulo">
+                                        Teste3
+                                    </div>
+                                    <div class="slidesubtitulo">
+                                        TESTE3 TESTE3 TESTE3 TESTE3 TESTE3 TESTE3 TESTE3 TESTE3
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide" style="background-image:url('https://cdn.pixabay.com/photo/2017/10/25/15/19/clouds-2888277_960_720.jpg');">
+                                <div class="slideinfo">
+                                    <div class="slidetitulo">
+                                        Teste4
+                                    </div>
+                                    <div class="slidesubtitulo">
+                                        TESTE4 TESTE4 TESTE4 TESTE4 TESTE4 TESTE4 TESTE4 TESTE4
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ÁREA DE NOTÍCIAS -->
+                    <div class="widget">
+                        <div class="widget-titulo">NOTÍCIAS</div>
+                        <div class="widget-conteudo">
+                            <div class="conteudo-area1">
+                                <div class="conteudo-img">
+                                    <img src="assets/images/noticia.jpeg" border="0" width="380" height="230"/>
+                                </div>
+                                <div class="conteudo-titulo">
+                                    Polícia Militar prende quadrilha com drogas e metralhadora na zona norte de Teresina.
+                                </div>
+                                <div class="conteudo-info">
+                                    <small>1 dia atrás</small>
+                                    <small><a href="./">Deixe um Comentário</a></small>
+                                </div>
+                                <div class="conteudo-texto">
+                                    Uma equipe da Polícia Militar (PM) prendeu, na tarde de segunda-feira (02), quatro pessoas acusadas de tráfico de drogas e de associação pa... <small><a href="./">Ler mais</a></small>
+                                </div>
+                            </div>        
+                            <div class="conteudo-area2">
+                                <div class="conteudo-item">
+                                    <div class="conteudo-img">
+                                        <img src="assets/images/cruzeiro_x_caldense.jpg" border="0" width="80" height="80"/>
+                                    </div>
+                                    <div class="conteudo-titulo">
+                                        Em retorno ao Mineirão, Cruzeiro empata por 1x1 com a Caldense no Campeonato Mineiro.
+                                    </div>
+                                    <div class="conteudo-info">
+                                        <small>2 dias atrás</small>
+                                        <small><a href="./">Deixe um Comentário</a></small>
+                                    </div>
+                                </div>
+
+                                <div class="conteudo-item">
+                                    <div class="conteudo-img">
+                                        <img src="assets/images/rihanna.jpg" border="0" width="80" height="80"/>
+                                    </div>
+                                    <div class="conteudo-titulo">
+                                        "Pessoas como ela são alicerces para que o melhor da moda não morra!"
+                                    </div>
+                                    <div class="conteudo-info">
+                                        <small>4 dias atrás</small>
+                                        <small><a href="./">Deixe um Comentário</a></small>
+                                    </div>
+                                </div>
+
+                                <div class="conteudo-item">
+                                    <div class="conteudo-img">
+                                        <img src="assets/images/criadordainternet.jpg" border="0" width="80" height="80"/>
+                                    </div>
+                                    <div class="conteudo-titulo">
+                                        Criador da internet teme a perda de todas as nossas memórias digitais no futuro.
+                                    </div>
+                                    <div class="conteudo-info">
+                                        <small>5 dias atrás</small>
+                                        <small><a href="./">Deixe um Comentário</a></small>
+                                    </div>
+                                </div>
+
+                                <div class="conteudo-item">
+                                    <div class="conteudo-img">
+                                        <img src="assets/images/obama.jpg" border="0" width="80" height="80"/>
+                                    </div>
+                                    <div class="conteudo-titulo">
+                                        Barack Obama é flagrado tirando foto com o 'pau de selfie'.
+                                    </div>
+                                    <div class="conteudo-info">
+                                        <small>7 dias atrás</small>
+                                        <small><a href="./">Deixe um Comentário</a></small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="clear:both"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PARTE DIREITA DO CORPO DO SITE -->
+                <div class="rightside">
+                    <!-- WIDGET "SOCIAL" -->
+                    <div class="widget">
+                        <div class="widget-titulo">SOCIAL</div>
+                        <div class="widget-conteudo" style="text-align: center;">
+                            <a href="" target="_blank"><img src="assets/images/rss.png" border="0" width="26" height="26"/></a>
+                            <a href="http://www.google.com.br" target="_blank"><img src="assets/images/googleplus.png" border="0" width="26" height="26"/></a>
+                            <a href="http://www.facebook.com.br" target="_blank"><img src="assets/images/facebook.png" border="0" width="26" height="26"/></a>
+                            <a href="http://www.twitter.com.br" target="_blank"><img src="assets/images/twitter.png" border="0" width="26" height="26"/></a>
+                            <a href="http://www.youtube.com.br" target="_blank"><img src="assets/images/youtube.png" border="0" width="26" height="26"/></a>
+                        </div>
+                    </div>
+                    <!-- WIDGET "ÚLTIMAS NOTÍCIAS" -->
+                    <div class="widget">
+                        <div class="widget-titulo">ÚLTIMAS NOTÍCIAS</div>
+                        <div class="widget-conteudo">
+                            Polícia Militar prende quadrilha com drogas e metralhadora na zona norte de Teresina. 
+                            <a href="./"><small>Ler mais</small></a>
+                        </div>
+                        <div class="widget-conteudo">
+                            Em retorno ao Mineirão, Cruzeiro empata por 1x1 com a Caldense no Campeonato Mineiro.
+                            <a href="./"><small>Ler mais</small></a>
+                        </div>
+                        <div class="widget-conteudo">
+                            "Pessoas como ela são alicerces para que o melhor da moda não morra!"
+                            <a href="./"><small>Ler mais</small></a>
+                        </div>
+                        <div class="widget-conteudo">
+                            Criador da internet teme a perda de todas as nossas memórias digitais no futuro.
+                            <a href="./"><small>Ler mais</small></a>
+                        </div>
+                        <div class="widget-conteudo">
+                            Barack Obama é flagrado tirando foto com o 'pau de selfie'.
+                            <a href="./"><small>Ler mais</small></a>
+                        </div>
+                    </div>
+                    <!-- WIDGET "PUBLICIDADE" -->
+                    <div class="widget">
+                        <div class="widget-titulo">PUBLICIDADE</div>
+                        <div class="widget-conteudo" style="text-align: center;">
+                            <p style="margin-top:0px;margin-bottom:7px;">Anuncie Aqui!</p>
+                            <img src="assets/images/publicidade.jpeg" width="259"/>
+                        </div>
+                    </div>
+                    <!-- WIDGET "FACEBOOK" -->
+                    <div class="widget">
+                        <div class="widget-titulo">ENCONTRE-NOS NO FACEBOOK</div>
+                        <div class="widget-conteudo">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdeu.brecha.apeguei%2F&tabs&width=259&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="259" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
